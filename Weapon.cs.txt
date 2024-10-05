@@ -1,0 +1,48 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Reflection.Metadata.Ecma335;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace GameOOP_class_
+{
+    class Weapon
+    {
+        string Gun;
+        string Shotgun;
+        string Rifle;
+        string Sniper;
+
+        static void Main(string[] args)
+        {
+            //select weapon
+
+            Console.WriteLine("Choose your weapon (Shotgun, Rifle, Sniper) : ");
+            string Gun = Console.ReadLine();
+
+            if (Gun == "Shotgun")
+            {
+                Console.WriteLine("You choose a SHOTGUN!!!");
+                Console.WriteLine("FireRate  = 1 Damage = 50 Bullet Count = 10");
+            }
+            else if (Gun == "Rifle")
+            {
+                Console.WriteLine("You choose a RIFLE!!!");
+                Console.WriteLine("FireRate  = 7 Damage = 10 Bullet Count = 30");
+            }
+            else if (Gun == "Sniper")
+            {
+                Console.WriteLine("You choose a SNIPER!!!");
+                Console.WriteLine("FireRate  = 0.5 Damage = 100 Bullet Count = 5");
+            }
+            else
+            {
+                Console.WriteLine("Invalid Weapon!");
+
+
+
+            }
+        }
+    }
+}
